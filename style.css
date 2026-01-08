@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #9945FF;
+    --secondary: #14F195;
+    --bg: #0d0d12;
+    --card-bg: #1a1a24;
+    --text: #ffffff;
+    --muted: #a0a0b0;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.blob {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: -1;
+    opacity: 0.15;
+}
+
+.blob-1 {
+    background: var(--primary);
+    top: -100px;
+    left: -100px;
+    animation: move 20s infinite alternate;
+}
+
+.blob-2 {
+    background: var(--secondary);
+    bottom: -100px;
+    right: -100px;
+    animation: move 25s infinite alternate-reverse;
+}
+
+@keyframes move {
+    from { transform: translate(0, 0); }
+    to { transform: translate(100px, 100px); }
+}
+
+nav {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 5% 10rem;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+    letter-spacing: -2px;
+}
+
+.hero-description {
+    font-size: 1.5rem;
+    color: var(--muted);
+    max-width: 700px;
+    margin-bottom: 3rem;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.app-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.app-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+}
+
+.app-card h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.app-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--muted);
+}
+
+footer {
+    padding: 4rem 5%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+}
+
+footer a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 3.5rem; }
+    .hero-description { font-size: 1.2rem; }
+}
