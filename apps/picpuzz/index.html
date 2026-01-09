@@ -3,70 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotly - Find the Difference Game</title>
-    <meta name="description" content="Spotly - Spot the differences between two images! Train your observation skills, earn coins, and connect your Solana wallet for rewards.">
+    <title>PicPuzz - Picture Word Puzzle Game</title>
+    <meta name="description" content="PicPuzz - See the picture, spell the word! Guess compound words from images and train your vocabulary skills.">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-        :root { --primary: #9945FF; --secondary: #14F195; --bg: #0d0d12; --text: #ffffff; --muted: #a0a0b0; }
-        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        :root { --primary: #FF6B6B; --secondary: #FFE66D; --accent: #4ECDC4; --bg: #1a1a2e; --text: #ffffff; --muted: #b8b8c8; }
+        body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, var(--bg) 0%, #16213e 100%); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
         nav { padding: 2rem; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 1.5rem; font-weight: 700; color: var(--text); text-decoration: none; }
         .nav-links a { color: var(--muted); text-decoration: none; margin-left: 2rem; transition: 0.3s; }
         .nav-links a:hover { color: var(--secondary); }
         main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; }
-        h1 { font-size: 3.5rem; background: linear-gradient(90deg, var(--secondary), var(--primary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+        h1 { font-size: 3.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
         .tagline { font-size: 1.4rem; color: var(--muted); max-width: 600px; margin-bottom: 1.5rem; }
         .features { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin: 2rem 0; max-width: 900px; }
-        .feature { background: rgba(153, 69, 255, 0.1); border: 1px solid rgba(153, 69, 255, 0.2); border-radius: 16px; padding: 1.5rem; width: 200px; transition: transform 0.3s, box-shadow 0.3s; }
-        .feature:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(153, 69, 255, 0.2); }
-        .feature-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .feature { background: rgba(255, 107, 107, 0.1); border: 1px solid rgba(255, 107, 107, 0.2); border-radius: 16px; padding: 1.5rem; width: 200px; transition: transform 0.3s, box-shadow 0.3s; }
+        .feature:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(255, 107, 107, 0.25); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
         .feature h3 { color: var(--secondary); margin: 0.5rem 0; font-size: 1.1rem; }
         .feature p { color: var(--muted); font-size: 0.9rem; margin: 0; }
         .btn { padding: 1rem 2.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #000; text-decoration: none; border-radius: 50px; font-weight: 700; display: inline-block; margin-top: 2rem; transition: transform 0.2s, box-shadow 0.2s; }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(20, 241, 149, 0.3); }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255, 230, 109, 0.4); }
         footer { padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--muted); }
         footer a { color: var(--text); text-decoration: none; margin: 0 0.5rem; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">🔍 Spotly</a>
+        <a href="index.html" class="logo">🧩 PicPuzz</a>
         <div class="nav-links">
             <a href="privacy.html">Privacy</a>
             <a href="terms.html">Terms</a>
         </div>
     </nav>
     <main>
-        <h1>Spotly</h1>
+        <h1>PicPuzz</h1>
         <p class="tagline">
-            Can you spot the differences? Compare two nearly identical images and find what's changed. Train your observation skills and earn rewards!
+            See the picture, spell the word! Look at an image and arrange letters to form the correct compound word. Test your vocabulary and have fun!
         </p>
         <div class="features">
             <div class="feature">
-                <div class="feature-icon">🔍</div>
-                <h3>Find Differences</h3>
-                <p>Compare two images and tap on the differences you discover</p>
+                <div class="feature-icon">🖼️</div>
+                <h3>Picture Clues</h3>
+                <p>View an image and guess the compound word it represents</p>
             </div>
             <div class="feature">
-                <div class="feature-icon">💖</div>
-                <h3>Lives System</h3>
-                <p>5 lives that regenerate over time. Be careful with wrong guesses!</p>
+                <div class="feature-icon">🔤</div>
+                <h3>Spell It Out</h3>
+                <p>Arrange scrambled letters to form words like RAINBOW & CUPCAKE</p>
             </div>
             <div class="feature">
-                <div class="feature-icon">🎰</div>
-                <h3>Daily Spin</h3>
-                <p>Spin the wheel daily to win coins, extra lives, and prizes</p>
+                <div class="feature-icon">🎁</div>
+                <h3>Daily Rewards</h3>
+                <p>Earn coins, hints, and exclusive prizes every day</p>
             </div>
             <div class="feature">
-                <div class="feature-icon">💎</div>
-                <h3>Solana Rewards</h3>
-                <p>Connect your wallet and sync your achievements on-chain</p>
+                <div class="feature-icon">⚔️</div>
+                <h3>PVP Mode</h3>
+                <p>Challenge friends and compete to see who spells faster!</p>
             </div>
         </div>
-        <a href="#" class="btn">Play Now</a>
+        <a href="#" class="btn">Start Playing</a>
     </main>
     <footer>
-        <p>&copy; 2026 Spotly. All rights reserved.</p>
+        <p>&copy; 2026 PicPuzz. All rights reserved.</p>
         <p><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="copyright.html">Legal</a></p>
     </footer>
 </body>
