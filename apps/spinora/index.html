@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinora - Spin to Win on Solana</title>
+    <meta name="description" content="Spinora - Spin the wheel, complete missions, and win real rewards on Solana.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+        :root { --primary: #F48FB1; --secondary: #9C27B0; --accent: #E040FB; --bg: #000000; --text: #ffffff; --muted: #b8b8c8; }
+        body { font-family: 'Outfit', sans-serif; background: linear-gradient(135deg, var(--bg) 0%, #1a1a1a 100%); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        nav { padding: 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--text); text-decoration: none; }
+        .nav-links a { color: var(--muted); text-decoration: none; margin-left: 2rem; transition: 0.3s; }
+        .nav-links a:hover { color: var(--secondary); }
+        main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; }
+        h1 { font-size: 3.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem; }
+        .tagline { font-size: 1.4rem; color: var(--muted); max-width: 600px; margin-bottom: 1.5rem; }
+        .features { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin: 2rem 0; max-width: 900px; }
+        .feature { background: rgba(244, 143, 177, 0.1); border: 1px solid rgba(244, 143, 177, 0.2); border-radius: 16px; padding: 1.5rem; width: 200px; transition: transform 0.3s, box-shadow 0.3s; }
+        .feature:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(244, 143, 177, 0.25); }
+        .feature-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .feature h3 { color: var(--secondary); margin: 0.5rem 0; font-size: 1.1rem; }
+        .feature p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+        .btn { padding: 1rem 2.5rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 700; display: inline-block; margin-top: 2rem; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(156, 39, 176, 0.4); }
+        footer { padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--muted); }
+        footer a { color: var(--text); text-decoration: none; margin: 0 0.5rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">🎡 Spinora</a>
+        <div class="nav-links">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Spinora</h1>
+        <p class="tagline">
+            Spin to Win on Solana! Complete daily missions, climb the leaderboard, and earn crypto rewards.
+        </p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎡</div>
+                <h3>Spin the Wheel</h3>
+                <p>Test your luck with daily spins and win exciting prizes</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Daily Missions</h3>
+                <p>Complete tasks to earn more spins and boost your chances</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h3>Leaderboard</h3>
+                <p>Compete with other players for top spots and exclusive rewards</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💎</div>
+                <h3>Solana Rewards</h3>
+                <p>Win real assets directly to your Solana wallet</p>
+            </div>
+        </div>
+        <a href="#" class="btn">Get Started</a>
+    </main>
+    <footer>
+        <p>&copy; 2026 Spinora. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="copyright.html">Legal</a></p>
+    </footer>
+</body>
+</html>
