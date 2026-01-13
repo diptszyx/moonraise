@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon X.O - Competitive Tic-Tac-Toe on Solana</title>
+    <meta name="description" content="Neon X.O - Play competitive Tic-Tac-Toe on Solana. Ranked matches, wallet connection, and crypto rewards.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        
+        :root { 
+            --primary: #00f3ff; /* Cyan */
+            --secondary: #ff00ff; /* Pink */
+            --bg: #09090b; 
+            --surface: #18181b;
+            --text: #ffffff; 
+            --muted: #a1a1aa; 
+        }
+        
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Neon Glow Effects */
+        .neon-text-cyan { text-shadow: 0 0 10px rgba(0, 243, 255, 0.5); }
+        .neon-text-pink { text-shadow: 0 0 10px rgba(255, 0, 255, 0.5); }
+        
+        nav { padding: 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #27272a; }
+        .logo { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 900; color: var(--text); text-decoration: none; letter-spacing: 2px; }
+        .logo span { color: var(--primary); }
+        
+        .nav-links a { color: var(--muted); text-decoration: none; margin-left: 2rem; transition: 0.3s; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; }
+        
+        h1 { font-size: 4rem; margin-bottom: 0.5rem; line-height: 1.1; font-weight: 900; letter-spacing: -2px; }
+        h1 .cyan { color: var(--primary); text-shadow: 0 0 30px rgba(0, 243, 255, 0.3); }
+        h1 .pink { color: var(--secondary); text-shadow: 0 0 30px rgba(255, 0, 255, 0.3); }
+        
+        .tagline { font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; color: var(--muted); max-width: 600px; margin-bottom: 3rem; }
+        
+        .features { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin: 2rem 0; max-width: 1000px; }
+        .feature { background: var(--surface); border: 1px solid #27272a; border-radius: 16px; padding: 2rem; width: 250px; transition: 0.3s; }
+        .feature:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 243, 255, 0.1); }
+        
+        .feature-icon { font-size: 2.5rem; margin-bottom: 1rem; color: var(--primary); }
+        .feature h3 { color: var(--text); margin: 0.5rem 0; font-size: 1.2rem; font-weight: 700; }
+        .feature p { color: var(--muted); font-size: 0.9rem; margin: 0; line-height: 1.5; }
+        
+        .btn { padding: 1rem 3rem; background: transparent; color: var(--primary); text-decoration: none; border: 2px solid var(--primary); border-radius: 4px; font-weight: 700; font-family: 'JetBrains Mono', monospace; display: inline-block; margin-top: 2rem; transition: 0.3s; text-transform: uppercase; letter-spacing: 2px; }
+        .btn:hover { background: var(--primary); color: #000; box-shadow: 0 0 30px rgba(0, 243, 255, 0.4); }
+        
+        footer { padding: 2rem; text-align: center; border-top: 1px solid #27272a; color: var(--muted); font-size: 0.9rem; }
+        footer a { color: var(--muted); text-decoration: none; margin: 0 1rem; transition: 0.3s; }
+        footer a:hover { color: var(--primary); }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">NEON<span>X.O</span></a>
+        <div class="nav-links">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+    </nav>
+    <main>
+        <h1>
+            <span class="cyan">NEON</span> <span class="pink">BATTLES</span>
+        </h1>
+        <p class="tagline">
+            The next generation of Tic-Tac-Toe. Connect your Solana wallet, compete in ranked matches, and win crypto rewards.
+        </p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-time PVP</h3>
+                <p>Instant matchmaking with zero lag using Socket.io technology.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h3>Ranked Modes</h3>
+                <p>Climb from Iron to Neon rank. Higher stakes, bigger rewards.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💸</div>
+                <h3>Solana Rewards</h3>
+                <p>Bet SOL on your skills. Winner takes all (minus small platform fee).</p>
+            </div>
+        </div>
+        <a href="#" class="btn">Play Now</a>
+    </main>
+    <footer>
+        <p>&copy; 2026 Neon X.O. All rights reserved.</p>
+        <p>Built on Solana</p>
+        <br>
+        <p><a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a> • <a href="copyright.html">Legal</a></p>
+    </footer>
+</body>
+</html>
